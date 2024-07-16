@@ -17,4 +17,4 @@ The project start with collecting the data from spotify database using API key.f
 
 
 ## Demo
-![References](/Screenshot%20(90).png)
+![References](image/Screenshot%20(90).png)
