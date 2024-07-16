@@ -1,10 +1,12 @@
 import pickle
 import streamlit as st
 from datetime import datetime
+import os
+from dotenv import load_dotenv
 import spotipy
 from spotipy.oauth2   import SpotifyClientCredentials
-client_id='ed7e8cbe42804977bc8c2ce344772bf7'
-client_secret='6e423e12e12042af98137b4c2c0af1b1'
+client_id=os.get('api_key')
+client_secret=os.get('api_secret')
 client_credentials_manger=SpotifyClientCredentials(client_id=client_id,client_secret=client_secret)
 sp=spotipy.Spotify(client_credentials_manager=client_credentials_manger)
 def get_song_album_cover_url(song_name, artist_name):
